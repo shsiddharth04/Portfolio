@@ -41,9 +41,7 @@ const MagneticWrapper: React.FC<MagneticWrapperProps> = ({
         transition: 'transform 0.2s cubic-bezier(0.33, 1, 0.68, 1)' // Spring-like feel
       }}
     >
-      {React.cloneElement(children, {
-        className: `${children.props.className || ''}`
-      })}
+      {children}
     </div>
   );
 };
